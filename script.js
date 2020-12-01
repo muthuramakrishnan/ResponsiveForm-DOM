@@ -38,6 +38,7 @@
             input.setAttribute('id','veg');
             input.setAttribute('name',param);
             input.setAttribute('class','input');
+            input.setAttribute('checked','');
             let p = document.createElement('p');
             p.innerText='Veg';
 
@@ -74,6 +75,7 @@
         else{
             let input = document.createElement('input'); input.setAttribute('type','text');
             input.setAttribute('id',param);
+            input.setAttribute('required','');
             input.setAttribute('name',param);
             input.setAttribute('class','input');
             formBox.append(label,input);
