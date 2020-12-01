@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body{
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    background-color: #FEC107;
+}
+
+/*styling the whole container & creating a flex box for form and table*/
+.container{
+    width: 98%;
+    background-color: #FEC107;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+main{
+    /* background-color: green; */
+    min-height: 200px;
+    flex: 1;
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+aside{
+    /* background-color: white; */
+    min-height: 200px;
+    flex: 2;
+    margin: 0.5rem;
+    box-sizing: border-box;
+
+}
+
+
+/*styling the form & elements*/
+form{
+   background-color: white;
+    max-width: 90%;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+
+form .formBox{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 97%;
+}
+
+form .formBox label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    /* font-size: 14px; */
+}
+form .formBox input, form .formBox select{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    /* font-size: 15px; */
+    padding: 8px 10px;
+    border-radius: 3px;
+
+}
+
+form .formBox button{
+    width: 100%;
+    padding: 8px 10px;
+    /* font-size: 15px;  */
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  /*styling the table elements*/
+  table{
+    /* background: blue; */
+    max-width: 100%;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 1rem;
+    background-color: white;
+  }
+  td, th{
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px;
+    word-break: break-word;
+    background-color: #E8F0FE;
+}
+th{
+    font-weight: bold;
+}
+
+/*media query*/
+  @media (max-width:900px) {
+      .container{
+        flex-direction: column;
+      }
+      form .formBox{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 97%;
+    }
+    main, aside{
+        margin: 0px;
+    }
+
+  }
+
+
+
+
